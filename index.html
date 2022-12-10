@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+
+           <title>陕西富平庄里柿饼分销官网</title>
+             <meta data-n-head="ssr" data-hid="description" name="description" content="粽子SHOP,粽子发卡商城,企业发卡源码,商城系统,粽子商城,粽子发卡,粽子企业发卡网,粽子SHOP源码">
+             <meta data-n-head="ssr" data-hid="keywords" name="keywords" content="粽子SHOP(www.666sc.cn)于2019/7/1发布!我们命名为发卡商城系统,是因为它的优势在于既是一款发卡系统,又是一款商城系统,同时使用又不冲突!欢迎大家下载体验">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv='Content-Security-Policy' content='block-all-mixed-content'>  
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        
+        <link rel="stylesheet" href="static/css/bootstrap.css">
+        <link rel="stylesheet" href="static/css/animate.css">
+        <link rel="stylesheet" href="static/css/mainCN.css">
+        <link rel="stylesheet" href="static/css/swiper.css">
+        <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="static/css/component.css">
+        <link rel="stylesheet" type="text/css" href="static/css/fxsmall.css">
+        <script src="static/js/jquery.min.js"></script>
+        <script src="static/js/wow.min.js"></script>
+        <script src="static/js/bootstrap.min.js"></script>
+        <script src="static/js/swiper.js"></script>
+        <script src="static/js/modernizr.custom.js"></script>
+        <script src="static/js/main.js"></script>
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?8d2806a7c8dbb0e0d21c860c0b4cc26d";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="static/js/html5shiv.js" ></script>
+            <script src="static/js/respond.min.js" ></script>
+        <![endif]-->
+        <!--[if IE 6]>
+            <script src="static/js/IE6_MAXMIX.js" ></script>
+            <script src="static/js/IE6_PNG.js" ></script>
+            <script>
+                DD_belatedPNG.fix('.pngFix');
+            </script>
+            <script>
+            // <![CDATA[
+                if((window.navigator.appName.toUpperCase().indexOf("MICROSOFT")>=0)&&(document.execCommand))
+                try{
+                    document.execCommand("BackgroundImageCache", false, true);
+                }
+                catch(e){}
+            // ]]>
+            </script>
+        <![endif]-->
+<style>
+
+</style>
+</head>
+<body>
+    <!--导航条-->
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-color: inherit;
+    outline:none
+}
+ul,
+ol,
+menu {
+    list-style: none;
+}
+form {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select {
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 12px;
+    background: transparent;
+}
+
+.select_expand {
+    width: 0;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.select_expand-after{
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    -webkit-transform: translate(-50%, -50%) rotate(90deg) scaleY(1.75);
+    transform: translate(-50%, -50%) rotate(90deg) scaleY(1.75);
+    color: #ffffff;
+    font-size: 12px;
+    top: 9px;
+    z-index: 2;
+    opacity: 1;
+    border: none;
+    outline:none;
+}
+.select_expand::after:focus{outline: none;border:none;} 
+
+.select_expand:hover::after {opacity: 1;outline: none;border:none;}
+
+.select_expand:checked::after {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg) scaleX(-1) scaleY(1.75);
+    transform: translate(-50%, -50%) rotate(90deg) scaleX(-1) scaleY(1.75); outline:none
+}
+
+.select_expandLabel {
+    display: block;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.select_close {display: none}
+
+.select_closeLabel {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.select_items {
+    width: 100%;
+    position: absolute;
+    top: 14px;
+    left: 0;
+    border: 2px solid #ffffff;
+    border-radius: 14px;
+    padding-top: 24px;
+}
+
+.select_input {display: none}
+
+.select_label {
+    height: 26px;
+    transition: all 250ms cubic-bezier(.4,.25,.3,1);
+    display: block;
+    height: 0;
+    font-size: 13px;
+    line-height: 28px;
+    overflow: hidden;
+    color: #ffffff;
+    cursor: pointer;
+    padding-left: 20px;
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+
+.select_label-placeholder {
+    height: 40px;
+    vertical-align: middle;
+    position: absolute;
+    top: 14px;
+    left: 0;
+    opacity: 1;
+    color: #ffffff;
+    background-color: transparent;
+    transition: all 250ms cubic-bezier(.4,.25,.3,1);
+    display: block;
+    font-size: 1.2rem;
+    line-height: 26px;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 18px;
+}
+
+.select_expand:checked + .select_closeLabel {
+ display: block;
+}
+
+.select_expand:checked + .select_closeLabel + .select_options .select_label {
+   height: 26px;
+}
+
+
+.select_expand:checked + .select_closeLabel + .select_options + .select_expandLabel {display: none}
+
+.select_input:checked + .select_label {
+  height: 26px;
+  margin-top: -26px;
+}
+</style>
+<header id="top-bar" class=" animated-header" style="max-height:400px;">
+
+    <!-- responsive nav button -->
+    <div class="container" style="height:50px">  <!--container 整页  container居中部分-->
+        <div class="navbar-header visible-xs" style="max-height:400px;position: relative;z-index:3;top:1px;width: 83%;"> 
+
+            <div class="navbar-brand logo"> 
+                <a href="">
+                    <img src="static/picture/logo.png" alt="">
+                </a>
+            </div>
+            <!-- /logo -->
+        </div>   
+        <div class="navbar-header hidden-xs" style="max-height:400px;position: relative;"> 
+            <div class="navbar-brand logo"> 
+                <a href="">
+                    <img src="static/picture/logo.png" alt="">
+                </a>
+            </div>
+            <!-- /logo -->
+        </div>   
+        <!-- 大屏时左侧下拉菜单 main menu -->
+        <nav class="collapse navbar-collapse navbar-right  m-n" role="navigation">
+                <div class="main-menu hidden-xs ">
+                    <ul class="nav navbar-nav navbar-right m-n">
+                        <li class="dropdown  ">
+                            <a class="cffffff" onclick="this.style.color='#ffffff';" class="dropdown-toggle">
+                                首页
+                            </a>
+                            <p class="straight-line-nav"></p>
+                            <div class="dropdown-content" style="left:-64px;">
+                            </div>
+                        </li>
+                        <li class="dropdown  ">
+                            <a class="cffffff" onclick="this.style.color='#ffffff';" href="#d1" class="dropdown-toggle">
+                                详细信息
+                            </a>
+                            <p class="straight-line-nav"></p>
+                            <div class="dropdown-content" style="left:-64px;">
+                            </div>
+                        </li>
+                        <li class="dropdown  ">
+                            <a class="cffffff" onclick="this.style.color='#ffffff';" href="#d3" class="dropdown-toggle">
+                                产品价格
+                            </a>
+                            <p class="straight-line-nav"></p>    
+                            <div class="dropdown-content" style="left:-64px;">
+                            </div>
+                        </li>
+                        <li class="dropdown  ">
+                            <a class="cffffff" onclick="this.style.color='#ffffff';" href="#d4" class="dropdown-toggle">
+                                关于我们
+                            </a>
+                            <p class="straight-line-nav"></p>    
+                            <div class="dropdown-content" style="left:-64px;">
+                            </div>
+                        </li>
+                </ul>
+            </div>
+        </nav>
+<!-- /main nav -->
+<!-- main menu 小屏时下拉菜单-->
+<div class="window hidden-lg hidden-md hidden-sm">
+    <div class="header">
+        <div class="burger-container">
+            <div id="burger">
+                <div class="bar topBar" style="background:#ffffff;"></div>
+                <div class="bar btmBar" style="background:#ffffff;"></div>
+            </div>
+        </div>
+        <div class="icon icon-apple"></div>
+        <ul class="menu">
+            <li class="menu-item"><a href="#d1">详细信息</a></li>
+            <li class="menu-item"><a href="#d3">产品价格</a></li>
+            <li class="menu-item"><a href="#d4">关于我们</a></li>
+        </ul>
+    </div>
+</div>
+
+
+</div>
+<script>
+    function nojump(){
+        $(".select_label-placeholder").html("")
+    }
+    function jump() {
+        String.prototype.splice = function(start, newStr) {
+            return this.slice(0, start) + newStr + this.slice(start);
+        };
+        var url = window.location.href;
+        if(url.indexOf('zh')==-1){
+            var newurl=url.replace(url,url+"en");
+            $(".select_label-placeholder").html("")
+        }else{
+            var newurl=url.replace("zh","en");
+            $(".select_label-placeholder").html("")
+        }
+        window.location.href=""+newurl;
+    }
+    (function(){
+        var burger = document.querySelector('.burger-container'),
+        header = document.querySelector('.header');
+
+        burger.onclick = function() {
+            header.classList.toggle('menu-opened');
+        }
+    }());
+    $(document).on("click",".burger-container",function(){
+        var display =$(".window .header ul.menu").css('display');
+        if(display == 'block'){
+            setTimeout(function(){
+                $(".window .header ul.menu").css("display","none"); 
+                $(".window").css("height","4vh")
+            },
+            300);
+        }else{
+            $(".window").css("height","50vh")
+            $(".window .header ul.menu").css("display","block")
+        }
+    })
+
+
+</script>
+</header>
+<!--导航条end-->
+<!--第一页部分home-->
+<div id="home-area" class="intro">
+    <div class="container" style="text-align:center">
+        <p class="wow fadeInDown animated little-title" data-wow-delay="0.2s">
+            质量在心中，招牌在手中，责任在肩上，诚信在言行中。
+            <br><br>
+        </p>
+        <h2 class="wow fadeInDown animated hidden-xs" data-wow-delay="0.2s" style="margin-top:-5px;">
+            陕西富平庄里柿饼<br>
+        </h2>
+        <h2 class="wow fadeInDown animated visible-xs" data-wow-delay="0.2s" style="margin-top:-5px;">
+            陕西富平庄里柿饼<br>
+        </h2>
+    </div>
+    <div style="position: relative;">
+        <img class="bg-home-bg" style="position: absolute;margin: 0 auto;top:-12px;" src="static/picture/bg-1-1-p.png" alt="">
+        <img class="bg-home" style="" src="static/picture/bg-1-1-b.jpg" alt="">
+    </div>
+    <div class="scroll-1 hidden-xs">
+        <div class="scroll-downs">
+            
+        </div>
+    </div>
+
+<span class="overlay">
+    <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 500 250" enable-background="new 0 0 500 250" xml:space="preserve" preserveaspectratio="none">
+    <path fill="#ffffff" d="M250,246.5c-97.85,0-186.100-40.044-250-104.633V250h500V141.867C436.344,206.456,347.85,246.5,250,246.5z"></path>
+</svg>
+</span>
+</div>
+<!--第一页部分end-->
+<!--第二页部分about-->
+<section id="about-area">
+    <div class="container">
+        <!-- 一排五个图标部分 end-->
+        <!-- 一排两个图片部分-->
+        <div class="row img-show">
+            <div class="col-md-8 col-sm-12 col-xs-12 wow fadeInDown animated finger" style="margin-bottom:0;padding-left:10px;padding-right:10px;" data-wow-delay="0.2s">
+                <div class="wow fadeInDown animated figure" data-wow-delay="0.2s">
+
+                    <div class="block w640 text-left" style="max-width:580px;">
+                        <!-- <h6 class="wow fadeInDown animated" data-wow-delay="0.2s">关于 ONCHAIN</h6> -->
+                        <h2 class="title wow fadeInDown c39498f sf-25" style="margin-top:50px" data-wow-delay="0.2s">富平柿饼，陕西省富平县特产，中国国家地理标志产品。</h2>
+                        <p class="straight-line2 wow fadeInDown hidden-xs animated" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1.5s;width:30px;margin-top: 20px;margin-bottom: 40px;margin-left: 3px;"></p>
+                        <div class="wow fadeInDown info-words m-light f-14 c576c87" data-wow-delay="0.2s">
+                            <p>富平柿饼以当地生产的传统名优柿子品种“富平尖柿”为原料，经过清洗削皮、日晒压捏、捏晒整形、定型捂霜等多道工序精细制作而成。“吊柿饼”是陕西富平县的传统。成熟的柿饼经过晾晒，一排排整齐地从架上垂挂下来，如一面面橘黄色珠帘，弥漫着淡淡果香。富平柿饼有四个特点，即甜、软、糯、无核。柿饼肉多霜厚，入口即化，甜美入心。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 wow fadeInDown animated finger" style="margin-bottom:0;padding-left:10px;padding-right:10px;">
+                <div class="wow fadeInDown animated figure" data-wow-delay="0.2s">
+                    <div class="img-wrapper action-2">
+                        <div>
+                            <h5>Who we are</h5>
+                            <h2><a href="#d4" class="" style="color:#ffffff">关于我们</a></h2>
+                            <img src="static/picture/aboutusarrow.png" class="about-arrow" alt="">
+                        </div>
+                        <img class="sca-img" src="static/picture/about-us.jpg" class="img-responsive" alt="">
+                        <img src="static/picture/about-us-1.png" class="img-responsive about-on-big" alt="">
+                        <img src="static/picture/about-us-2.png" class="img-responsive about-on" alt="">
+                    </div>     
+                </div>
+            </div>
+        </div>
+        <!-- 一排两个图片部分-->
+    </div>     
+</section>
+<!--第二页about部分end-->
+<section id="industry-question">
+    <div class="industry-back">
+        <div class="container">
+                <!-- col-md-4 col-sm-4 col-xs-6 hidden-xs -->
+                <a name="d1"></a>
+            <div class="top col-md-12 col-sm-12 col-xs-12">
+                <b class="sf-25">您是否也在为<span>低端商城</span>产生的各种问题担忧？</b>
+                <p>即刻选择我们，一站解决所有，快来了解一下吧！</p>
+            </div>
+            <div class="content wow fadeInDown animated finger">
+                <div class="item col-md-6 col-sm-12 col-xs-12 wow col-xs-12 fadeInDown animated figure" data-wow-delay="0.2s">
+                    <div class="item-back">
+                        <div class="icon-industry">
+                            <img src="static/picture/1.png" alt="">
+                        </div>
+                        <div class="text-industry">
+                            <span>1.模版切换</span>
+                            <p>主站/分站一键切换首页模版.手机端/电脑端可单独设置模版</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-md-6 col-sm-12 col-xs-12 wow col-xs-12 fadeInDown animated figure" data-wow-delay="0.2s">
+                    <div class="item-back">
+                        <div class="icon-industry">
+                            <img src="static/picture/2.png" alt="">
+                        </div>
+                        <div class="text-industry">
+                            <span>2.用户评价</span>
+                            <p>会员购买商品后,可对商品进行评价!后台控制是否需要审核</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-md-6 col-sm-12 col-xs-12 wow col-xs-12 fadeInDown animated figure" data-wow-delay="0.2s">
+                    <div class="item-back">
+                        <div class="icon-industry">
+                            <img src="static/picture/3.png" alt="">
+                        </div>
+                        <div class="text-industry">
+                            <span>3.物流跟踪</span>
+                            <p>实物订单发货用户可以在订单处一键查看物流信息!支持几十家快递公司</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-md-6 col-sm-12 col-xs-12 wow col-xs-12 fadeInDown animated figure" data-wow-delay="0.2s">
+                    <div class="item-back">
+                        <div class="icon-industry">
+                            <img src="static/picture/4.png" alt="">
+                        </div>
+                        <div class="text-industry">
+                            <span>4.QQ快捷登陆</span>
+                            <p>系统已对接官方登陆API.同时支持阿洋QQ互联分发API</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-md-6 col-sm-12 col-xs-12 wow col-xs-12 fadeInDown animated figure" data-wow-delay="0.2s">
+                    <div class="item-back">
+                        <div class="icon-industry">
+                            <img src="static/picture/5.png" alt="">
+                        </div>
+                        <div class="text-industry">
+                            <span>5.验证码模式</span>
+                            <p>后台一键设置三种验证码模式:无需验证码/极验行为/无需验证码</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-md-6 col-sm-12 col-xs-12 wow col-xs-12 fadeInDown animated figure" data-wow-delay="0.2s">
+                    <div class="item-back">
+                        <div class="icon-industry">
+                            <img src="static/picture/6.png" alt="">
+                        </div>
+                        <div class="text-industry">
+                            <span>6.卡密安全</span>
+                            <p>批量导入卡密/卡密加密/卡密同步/卡密自定义加密</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-md-6 col-sm-12 col-xs-12 wow col-xs-12 fadeInDown animated figure" data-wow-delay="0.2s">
+                    <div class="item-back">
+                        <div class="icon-industry">
+                            <img src="static/picture/7.png" alt="">
+                        </div>
+                        <div class="text-industry">
+                            <span>7.收货模版</span>
+                            <p>自定义收货模版,输入框/单选按钮/多选按钮/下拉列表</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-md-6 col-sm-12 col-xs-12 wow col-xs-12 fadeInDown animated figure" data-wow-delay="0.2s">
+                    <div class="item-back">
+                        <div class="icon-industry">
+                            <img src="static/picture/8.png" alt="">
+                        </div>
+                        <div class="text-industry">
+                            <span>8.商品参数</span>
+                            <p>自定义商品标签,还可以设置限购模式,限购数量等</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--第三部分solution-->
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div></section>            
+
+<section id="product-price">
+    <div class="product-back">
+        <div class="container">
+                <a name="d3"></a>
+            <div class="top col-md-12 col-sm-12 col-xs-12">
+                <b class="sf-25">版本选择</b>
+                <p>多种版本，多种服务，任君选择<br></p>
+            </div>
+            <div class="content wow fadeInDown animated finger">
+                <div class="item col-md-4 col-sm-12 wow col-xs-12 fadeInDown animated figure" data-wow-delay="0.2s">
+                    <div class="item-back">
+                        <div class="title-product">
+                            <p>粽子SHOP/正版一年授权</p>
+                            <div>
+                                <b>
+                                    <span>￥</span>
+                                    45
+                                </b>
+                                <span>/包售后</span>
+                            </div>
+                        </div>
+                        <div class="text-product">
+                            <ul class="item-list">
+                                <li>正版授权</li>
+                                <li>年费权限</li>
+                                <li>官方售后群</li>
+                                <li>程序相关问题解答</li>
+                                <li>程序终生更新</li>
+                                <li>售后论坛</li>
+                                <li>授权自助更换</li>
+                                <li>无限分站</li>
+                                <li>VX：123456</li>
+                                <li>QQ：123456</li>
+                            </ul>
+                        </div>
+                        <div class="price-btn">
+                            <a >购买授权</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-md-4 col-sm-12 wow col-xs-12 fadeInDown animated figure" data-wow-delay="0.2s">
+                    <div class="item-back">
+                        <div class="title-product">
+                            <p>粽子SHOP/正版永久授权</p>
+                            <div>
+                                <b>
+                                    <span>￥</span>
+                                    78
+                                </b>
+                                <span>/包售后</span>
+                            </div>
+                        </div>
+                        <div class="text-product">
+                            
+                            <ul class="item-list">
+                                <li>正版授权</li>
+                                <li>永久权限</li>
+                                <li>官方售后群</li>
+                                <li>程序相关问题解答</li>
+                                <li>程序终生更新</li>
+                                <li>售后论坛</li>
+                                <li>授权自助更换</li>
+                                <li>无限分站</li>
+                                <li>VX：123456</li>
+                                <li>QQ：123456</li>
+                            </ul>
+                        </div>
+                        <div class="price-btn">
+                            <a >购买授权</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col-md-4 col-sm-12 wow col-xs-12 fadeInDown animated figure" data-wow-delay="0.2s">
+                    <div class="item-back">
+                        <div class="title-product">
+                            <p>粽子SHOP/正版一条龙</p>
+                            <div>
+                                <b>
+                                    <span>￥</span>
+                                    130
+                                </b>
+                                <span>/包售后/搭建</span>
+                            </div>
+                        </div>
+                        <div class="text-product">
+                            
+                        <ul class="item-list">
+                                <li>正版授权（全套服务）</li>
+                                <li>提供一级域名</li>
+                                <li>提供服务器</li>
+                                <li>售后群+后期运维</li>
+                                <li>程序终生更新</li>
+                                <li>提供支付接口</li>
+                                <li>到手后直接使用</li>
+                                <li>无限分站</li>
+                                <li>VX：123456</li>
+                                <li>QQ：123456</li>
+                            </ul>
+                        </div>
+                        <div class="price-btn">
+                            <a >购买授权</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  erp介绍 -->
+<section id="about-area" class="erp_back">
+    <div class="container">
+        <!-- 一排五个图标部分 end-->
+        <!-- 一排两个图片部分-->
+        <div class="row img-show">
+            <div class="col-md-8 col-sm-12 col-xs-12 wow fadeInDown animated finger" style="margin-bottom:0;padding-left:10px;padding-right:10px;" data-wow-delay="0.2s">
+                <div class="wow fadeInDown animated figure" data-wow-delay="0.2s">
+                    <img class="erp_back_img" src="static/picture/erp_back.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 wow fadeInDown animated finger" style="margin-bottom:0;padding-left:10px;padding-right:10px;">
+                <div class="wow fadeInDown animated figure" data-wow-delay="0.2s">
+                    <div class="word-wrap">
+                        <h2 class="title">粽子SHOP</h2>
+                        <p class="title">用智慧科技告别传统商城烦恼</p>
+                        <p class="desc">
+                            有效提高企业资源化管理的信息化、自动化、可视化管理 为各行业提供更高效、边界的仓储管理体验 同时支持供应链上各种类型仓储需求
+                        </p>
+                        <div class="more">
+                            <a >查看详情</a>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+        <!-- 一排两个图片部分-->
+    </div>     
+</section>
+                                </div>
+                                <div class="time">
+                                    <b></b>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</section>
+<!--第五部分join us-->
+<section id="join-us">
+    <div class="container">
+        <a name='d4'></a>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 p-n">
+                <h2 class="title wow fadeInDown sf-25" data-wow-delay="0.2s">关于我们
+                    <p class="straight-line2 wow fadeInDown hidden-xs" data-wow-delay="0.2s"></p>
+                    <p class="straight-line-phone wow fadeInDown visible-xs" data-wow-delay="0.2s"></p>
+                    <p class="wow fadeInDown join-info f-16 sf-12" data-wow-delay="0.2s">
+                        智能时代，粽子商城，未来已来，连接你我，感知世界
+                    </p>
+                    <div class="btn-box">
+                        <p>
+                            这是最好的时代,一个几乎不需要成本就可以发家致富的时代!
+                        </p>
+                    </div>
+                </h2></div>
+                <div class="col-md-6 col-sm-12 hidden-xs p-n">
+                    <script src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=N0cQYkdlhirNZCPhnOHEfj4LeBkX7Yau"></script>
+                    <div class="join-pic " style="width: 100%" id="container"/>
+                    <script>
+                        var map = new BMapGL.Map("container");
+                        map.disableDragging();
+                        var point = new BMapGL.Point(109.058387,34.855065);
+                        map.centerAndZoom(point, 12);
+
+                        var marker = new BMapGL.Marker(point);
+                        map.addOverlay(marker);
+                        var opts = {
+                            width : 100,
+                            height: 50,
+                            title : "柿饼产地"
+                        }
+                        var infoWindow = new BMapGL.InfoWindow("地址：陕西省富平县庄里镇", opts);  // 创建信息窗口对象
+                        map.openInfoWindow(infoWindow, point);
+                        marker.addEventListener("click", function(){
+                            map.openInfoWindow(infoWindow, point); //开启信息窗口
+                        });
+                    </script>
+<!--                    <section class="join-pic ">-->
+<!--                        <div class="rahmen">-->
+<!--                            <div class="karte strom">-->
+<!--                                <img src="static/picture/bg-5-1.png" alt="img01">-->
+<!--                            </div>-->
+<!--                            <div class="karte gas aktiv">-->
+<!--                                <img src="static/picture/bg-5-1.png" alt="img01">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </section>-->
+                </div>      
+                <div class="col-md-6 col-sm-12 hidden-sm hidden-md hidden-lg">
+                    <div class="wow fadeInDown join-us-simg" data-wow-delay="0.2s">
+                        <img src="static/picture/bg-5-1.png" style="width:100%">
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+<!--footer end-->
+<script src="static/js/classie.js"></script>
+<script src="static/js/main.js"></script>
+    <!--footer-->
+    <footer id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 col-sm-8 col-xs-12">
+                <div class="row footer-info">
+                    <div class="col-md-4 col-sm-4 col-xs-6">
+                        <ul>
+                            <li>合作伙伴</li>
+                            <li><a href="javascript:;">小刀网</a></li>
+                            <li><a href="javascript:;">待添加</a></li>
+                            <li><a href="javascript:;">待添加</a></li>
+                            <li><a href="javascript:;">待添加</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6">
+                        <ul>
+                            <li>联系我们</li>
+                            <li style="color:#000000">商务:粽子商城授权</li>
+                            <li><a href="tel:123456">123456</a></li>
+                            <li style="color:#000000">邮箱</li>
+                            <li><a href="">admin@x6d.com</a></li>
+                            <li style="color:#000000"></li>
+                            <li>
+                               <a href=""></a>
+                           </li>
+
+                       </ul>
+                   </div>
+                   <div class="col-md-4 col-sm-4 hidden-xs">
+                    <ul>
+                        <li></li>
+                        <li>
+                            <span class="col-sm-1" style="padding:0">
+                                <img src="static/picture/address.jpg" alt="">
+                            </span> 
+                            <span class="col-sm-11" style="padding:0">
+                               
+                            </span>
+                            <br>
+                        </li>
+                        <li>&nbsp;</li>
+                        
+                        <li>&nbsp;</li>
+
+                    </ul>
+                </div>
+                <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                    <ul>
+                        <li></li>
+                        <li style="max-width:400px;">
+                            <span style="display:inline-block;height:18px;max-height:30px;float:left;">
+                                <img src="static/picture/address.jpg" alt="">
+                            </span> 
+                        </li>
+                        <li style="max-width:400px;">
+                            <img style="width:90px;" src="static/picture/jiaweixing1.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-4 col-xs-12 hidden-xs" style="text-align:right;margin-top:20px">
+            <img src="static/picture/jiaweixing1.png" alt="" style="width:91px;height:110px">
+        </div>
+    </div>
+    <div class="footer-foot row">
+        <div class="col-md-6" style="color:#b5bcc6">
+        
+        </div>
+        <div class="col-md-6" style="color:#b5bcc6">
+            <span class="foot-beian"></span>
+        </div>
+    </div>
+</div>
+</footer>
+<!--footer end-->
+<script src="static/js/classie.js"></script>
+<script src="static/js/main.js"></script>
+</html>
+<script>
+
+
+
+
+    var sildeW 
+    if($(window).width()>1526){
+        sildeW  = 4;
+    }else if($(window).width()<1526&&$(window).width()>1110){
+        sildeW  = 3;
+    }else if($(window).width()<1110){
+        sildeW  = "auto";
+    }
+    window.onresize = function(){ /*第三部分名片左侧边距*/
+        if($(window).width()>1526){
+            sildeW  = 4;
+        }else if($(window).width()<1526&&$(window).width()>1110){
+            sildeW  = 3;
+        }else if($(window).width()<1110){
+            sildeW  = "auto";
+        }
+    }
+    var swiper = new Swiper('.swiper-container', { /*第三部分名片切换滑动效果*/
+        keyboardControl : true,
+        slidesPerView: sildeW ,
+        speed:100,
+        freeModeMomentumRatio : 1,
+        freeModeMomentumVelocityRatio : 1,
+        spaceBetween: 25,
+        mousewheelControl : true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        freeMode: true,
+        grabCursor: true,
+        breakpoints: {
+            1024: {
+                slidesPerView: 'auto',
+                spaceBetween: 25,
+            },
+            910: {
+                slidesPerView: 'auto',
+                spaceBetween: 25,
+            },
+            768: {
+                slidesPerView: 'auto',
+                spaceBetween: 25,
+            },
+            640: {
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+            },
+            320: {
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+            }
+        }
+    });
+
+    if(screen.width > 768){    
+        var swiperP = new Swiper('.swiper-staff', {
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            grabCursor: true,
+            loop: true,
+            spaceBetween: 40,
+            centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    }else{
+        var swiperP = new Swiper('.swiper-staff', {
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            grabCursor: true,
+            loop: true,
+            spaceBetween: 15,
+            centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    }  
+    function inViewport($el) {
+        var H = $(window).height(),
+        r = $el[0].getBoundingClientRect(), t=r.top, b=r.bottom;
+        return Math.max(0, t>0? H-t : (b<H?b:H));  
+    }
+
+    $(window).on("scroll resize", function(){
+        var window_offset = inViewport($('.intro')); 
+        $(".overlay").height(window_offset/4);
+    });
+
+    function solution(t) {
+        var tid=$(t).attr('id');
+        alert(tid)
+    }
+    setInterval(function(){ 
+        $('.karte.gas').removeClass('aktiv');
+        $('.karte.strom').addClass('aktiv');
+        // e.preventDefault();
+        setTimeout(function(){
+            $('.karte.strom').removeClass('aktiv');
+            $('.karte.gas').addClass('aktiv');
+        },5000)
+    }, 10000);
+    $(window).resize(function() {
+        var width = $("#home-area .bg-home").width();
+        $("#home-area .bg-home-bg").width(width);
+    });
+    $(function(){
+        var width = $("#home-area .bg-home").width();
+        $("#home-area .bg-home-bg").width(width);
+    })
+
+    window.onresize = function(){ /*第三部分名片左侧边距*/
+        leftSwiper = $(".juli").offset().left;
+        $(".juli-ml").css("margin-left",leftSwiper);
+    }
+    window.onload=function(){
+        var width = $("#home-area .bg-home").width();
+        $("#home-area .bg-home-bg").width(width); 
+        leftSwiper = $(".juli").offset().left;
+        $(".juli-ml").css("margin-left",leftSwiper+15);
+        var card = $(".b-card");
+        for(i=0;i<card.length;i++){
+            var cardHeight = $(".b-card").eq(i).children("ul").height();
+            var infoHeight = 258-cardHeight-66;
+            $(".b-card").eq(i).children(".info").css("height",infoHeight+"px");
+        }
+    }
+</script>
+
+
