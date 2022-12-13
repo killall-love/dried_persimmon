@@ -745,14 +745,11 @@
 					</div>
 					<div class="col-md-6 col-sm-12 p-n">
 						<script src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=N0cQYkdlhirNZCPhnOHEfj4LeBkX7Yau"></script>
-						<div class="join-pic ">
+						<div>
 							<div class="join-pic " style="width: 100%;pointer-events: none;" id="container" />
 						</div>
 						<script>
 							var map = new BMapGL.Map("container");
-// 							map.disableDragging();
-							map.disableDoubleClickZoom() //禁止缩放
-						     	map.enableScrollWheelZoom(false); //开启鼠标滚轮缩放
 							var point = new BMapGL.Point(109.058387, 34.855065);
 							map.centerAndZoom(point, 12);
 							var marker = new BMapGL.Marker(point);
