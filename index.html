@@ -834,8 +834,8 @@
 					<div class="col-md-5 col-sm-4 col-xs-12 hidden-xs" style="text-align:right;margin-top:20px">
 						<p id="text000001">使用微信扫一扫添加微信</p>
 						<script type="text/javascript">
-						    var useragent = navigator.userAgent;
-						    if (useragent.match(/MicroMessenger/i) != 'MicroMessenger') {
+						    var ua = navigator.userAgent.toLowerCase();
+						    if (ua.match(/MicroMessenger/i) == "micromessenger") {
 							var p=document.getElementById("text000001");
                 					p.innerHTML="长按扫描二维码";
 						    }
