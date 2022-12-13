@@ -835,11 +835,9 @@
 						<p id="text000001">使用微信扫一扫添加微信</p>
 						<script type="text/javascript">
 						    var ua = navigator.userAgent.toLowerCase();
-							alert(ua)
 						    if (ua.match(/MicroMessenger/i) == "micromessenger") {
-							    alert('11')
 							var p=document.getElementById("text000001");
-                					p.innerHTML="长按扫描二维码";
+                					p.innerText ="长按扫描二维码";
 						    }
 						</script>
 						<img src="img/weixin.jpg" alt="" style="width:50%;height:50%">
