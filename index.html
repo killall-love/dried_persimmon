@@ -753,7 +753,12 @@
 						     	map.enableScrollWheelZoom(false); //开启鼠标滚轮缩放
 							var point = new BMapGL.Point(109.058387, 34.855065);
 							map.centerAndZoom(point, 12);
-
+							map.addEventListener("touchmove", function (e) {
+							    map.enableDragging();
+							});
+							map.addEventListener("touchend", function (e) {
+							    map.disableDragging();
+							});
 							var marker = new BMapGL.Marker(point);
 							map.addOverlay(marker);
 							var opts = {
