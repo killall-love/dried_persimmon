@@ -847,14 +847,17 @@
 						<p id="text000001">使用微信扫一扫添加微信</p>
 						<p id="text000002">长按扫描二维码</p>
 						<script type="text/javascript">
-						    var ua = navigator.userAgent.toLowerCase();
-							var p1=document.getElementById("text000001");
-							var p2=document.getElementById("text000002");
-							p2.style.visibility = 'hidden';// 隐藏元素
-						    if (ua.match(/MicroMessenger/i) == "micromessenger") {
-							p1.style.visibility = 'hidden';// 隐藏元素
-							p2.style.visibility = 'visible';// 显示元素
-						    }
+							window.onload = function () {
+								var ua = navigator.userAgent.toLowerCase();
+								var p1=document.getElementById("text000001");
+								var p2=document.getElementById("text000002");
+								p2.style.visibility = 'hidden';// 隐藏元素
+							    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+								p1.style.visibility = 'hidden';// 隐藏元素
+								p2.style.visibility = 'visible';// 显示元素
+							    }
+							}
+						    
 						</script>
 						<img src="img/weixin.jpg" alt="" style="width:50%;height:50%">
 					</div>
