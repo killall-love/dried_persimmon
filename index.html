@@ -758,6 +758,8 @@
 							if(IsMobile()){
 							   $('#container').css('pointer-events','none')
 							}
+							map.disableDragging();
+							map.disableScrollWheelZoom();
 							var marker = new BMapGL.Marker(point);
 							map.addOverlay(marker);
 							var opts = {
