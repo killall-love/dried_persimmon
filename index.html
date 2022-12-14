@@ -755,7 +755,9 @@
 							var map = new BMapGL.Map("container");
 							var point = new BMapGL.Point(109.058387, 34.855065);
 							map.centerAndZoom(point, 12);
-							map.disableScrollWheelZoom();
+							if(IsMobile()){
+							   $('#container').css('pointer-events','none')
+							}
 							var marker = new BMapGL.Marker(point);
 							map.addOverlay(marker);
 							var opts = {
@@ -768,6 +770,28 @@
 							marker.addEventListener("click", function() {
 								map.openInfoWindow(infoWindow, point); //开启信息窗口
 							});
+				
+							//根据操作系统
+							function IsMobile() {
+							    var isMobile = {
+								Android: function () {
+								     return navigator.userAgent.match(/Android/i) ? true : false;
+								},
+								BlackBerry: function () {
+								     return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+								},
+								iOS: function () {
+								     return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+								},
+								Windows: function () {
+								     return navigator.userAgent.match(/IEMobile/i) ? true : false;
+								},
+								any: function () {
+								     return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+								}
+							     };
+							     return isMobile.any(); //是移动设备
+							}
 						</script>
 					</div>
 					<!--                    <section class="join-pic ">-->
